@@ -1,0 +1,188 @@
+.project {
+  height: 100vh;
+  padding: 6.25rem 0;
+  background-color: #000;
+  padding-top: 9.375rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  /* Futuristik font */
+  letter-spacing: 0.125rem;
+  text-shadow: 0 0 5px #f22a8d,
+    0 0 10px #f22a8d,
+    0 0 20px #f22a8d,
+    0 0 40px #f22a8d,
+    0 0 80px #f22a8d;
+  animation: flicker 3s infinite;
+}
+
+/* Flicker animation */
+@keyframes flicker {
+
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    opacity: 1;
+  }
+
+  20%,
+  24%,
+  55% {
+    opacity: 0.4;
+  }
+}
+
+
+.project_box {
+  margin-top: 6.25rem;
+  padding: 0px 1.25rem;
+}
+
+.project_card {
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project_card:hover {
+  transform: translateY(-10px);
+}
+
+.project_icon {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.project_text {
+  margin-top: 0.9375rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+@media (max-width: 65rem) {
+  .project {
+    padding: 6.25rem 1rem;
+
+    .title {
+      padding-top: 6.25rem;
+      font-size: 1.75rem;
+    }
+
+    .project_box {
+      margin-top: 6.25rem;
+      gap: 1rem;
+    }
+
+    .project_card {
+      .project_text {
+        font-size: 1rem;
+        padding: 0.75rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 55rem) {
+  .project {
+    padding: 6.25rem 1rem;
+
+    .title {
+      padding-top: 6.25rem;
+      font-size: 1.75rem;
+    }
+
+    .project_box {
+      margin-top: 6.25rem;
+      gap: 1rem;
+    }
+
+    .project_card {
+      .project_text {
+        font-size: 1rem;
+        padding: 0.75rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 50rem) {
+  .project {
+    padding: 5rem 1rem;
+
+    .title {
+      padding-top: 5rem;
+      font-size: 1rem;
+    }
+
+    .project_box {
+      margin-top: 5rem;
+      gap: 0.8rem;
+    }
+
+    .project_card {
+      .project_text {
+        font-size: 1rem;
+        padding: 0.75rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 48rem) {
+  .project {
+    padding: 5rem 0.75rem;
+
+    .title {
+      font-size: 1.5rem;
+    }
+
+    .project_card {
+      .project_icon {
+        height: 10rem;
+      }
+
+      .project_text {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .project {
+    padding: 60px 10px;
+
+    .title {
+      font-size: 1.25rem;
+    }
+
+    .project_box {
+      grid-template-columns: 1fr;
+    }
+
+    .project_card {
+      .project_icon {
+        height: 9rem;
+      }
+
+      .project_text {
+        font-size: 14px;
+      }
+    }
+  }
+}
