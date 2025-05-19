@@ -80,7 +80,7 @@ const Contacts = () => {
             <a href="https://www.instagram.com/firdavskomilov01/" target="_blank" rel="noopener noreferrer">
               <img src={instagramLogo} alt="Instagram" />
             </a>
-            <a href="https://t.me/firdavskomilov01" target="_blank" rel="noopener noreferrer">
+            <a href="https://t.me/firdavs2005_bot" target="_blank" rel="noopener noreferrer">
               <img src={telegramLogo} alt="Telegram" />
             </a>
             <a href="https://www.facebook.com/Фирдавс" target="_blank" rel="noopener noreferrer">

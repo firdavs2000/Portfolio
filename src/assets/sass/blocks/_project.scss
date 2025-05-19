@@ -1,78 +1,92 @@
 .project {
   height: 100vh;
-  padding: 6.25rem 0;
-  background-color: #000;
-  padding-top: 9.375rem;
-}
+  padding: 9.375rem 0 6.25rem;
+  background: linear-gradient(135deg, #0a0a23, #1a0033);
+  position: relative;
+  overflow: hidden;
 
-.title {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 2.5rem;
-  color: #fff;
-  font-family: 'Rubik', sans-serif;
-  /* Futuristik font */
-  letter-spacing: 0.125rem;
-  text-shadow: 0 0 5px #f22a8d,
-    0 0 10px #f22a8d,
-    0 0 20px #f22a8d,
-    0 0 40px #f22a8d,
-    0 0 80px #f22a8d;
-  animation: flicker 3s infinite;
-}
-
-/* Flicker animation */
-@keyframes flicker {
-
-  0%,
-  18%,
-  22%,
-  25%,
-  53%,
-  57%,
-  100% {
-    opacity: 1;
+  // Cyber grid background
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/images/grid.svg'); // optional background
+    opacity: 0.05;
+    z-index: 0;
   }
 
-  20%,
-  24%,
-  55% {
-    opacity: 0.4;
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif; // More cyber than Rubik
+    letter-spacing: 0.125rem;
+    text-shadow: 0 0 5px #00ffe1,
+                 0 0 10px #00ffe1,
+                 0 0 20px #00ffe1,
+                 0 0 40px #00ffe1,
+                 0 0 80px #00ffe1;
+    animation: flicker 3s infinite;
+    position: relative;
+    z-index: 1;
+  }
+
+  @keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; }
+    20%, 24%, 55% { opacity: 0.4; }
+  }
+
+  &_box {
+    margin-top: 6.25rem;
+    padding: 0 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  &_card {
+    width: 18.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #00ffe1;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0, 255, 225, 0.5);
+    padding: 1.25rem;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 0 25px rgba(0, 255, 225, 0.7), 0 0 40px rgba(0, 255, 225, 0.3);
+    }
+  }
+
+  &_icon {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 10px rgba(0, 255, 225, 0.3);
+  }
+
+  &_text {
+    margin-top: 0.9375rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 5px #00ffe1;
   }
 }
 
-
-.project_box {
-  margin-top: 6.25rem;
-  padding: 0px 1.25rem;
-}
-
-.project_card {
-  background: #fff;
-  border-radius: 0.75rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 1.25rem;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.project_card:hover {
-  transform: translateY(-10px);
-}
-
-.project_icon {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 0.5rem;
-}
-
-.project_text {
-  margin-top: 0.9375rem;
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #333;
-}
 
 @media (max-width: 65rem) {
   .project {
