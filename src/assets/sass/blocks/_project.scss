@@ -1,37 +1,36 @@
 .light {
   .project {
-    background: linear-gradient(135deg, #f5faff, #e8f0ff);
+    background: linear-gradient(135deg, #ffffff, #e3e7ee);
 
     &::before {
-      background: url('/images/grid-light.svg'); // Light-themed grid
+      background: url('/images/grid-light.svg'); // lighter grid if needed
       opacity: 0.08;
     }
 
     .title {
-      color: #111;
-      text-shadow: 0 0 3px #00c2ff, 0 0 6px #00c2ff;
+      color: #1a1a1a;
+      text-shadow: 0 0 5px #f22a8d,
+                   0 0 10px #f22a8d,
+                   0 0 20px #f22a8d;
     }
 
     &_card {
-      background: rgba(255, 255, 255, 0.65);
-      border-color: #00c2ff;
-      box-shadow: 0 0 10px rgba(0, 194, 255, 0.2);
+      background: rgba(255, 255, 255, 0.6);
+      border: 1px solid #f22a8d;
+      box-shadow: 0 0 15px rgba(242, 42, 141, 0.4);
 
       &:hover {
-        box-shadow: 0 0 25px rgba(0, 194, 255, 0.4), 0 0 40px rgba(0, 194, 255, 0.2);
+        box-shadow: 0 0 25px rgba(242, 42, 141, 0.6), 0 0 45px rgba(242, 42, 141, 0.3);
       }
     }
 
     &_text {
-      color: #111;
-      text-shadow: 0 0 3px #00c2ff;
-    }
-
-    &_icon {
-      box-shadow: 0 0 8px rgba(0, 194, 255, 0.3);
+      color: #1a1a1a;
+      text-shadow: 0 0 5px #f22a8d;
     }
   }
 }
+
 
 
 .project {
@@ -55,10 +54,9 @@
   }
 
   .title {
-    margin-top: 50px;
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
     color: #fff;
     font-family: 'Orbitron', sans-serif; // More cyber than Rubik
     letter-spacing: 0.125rem;
@@ -78,7 +76,7 @@
   }
 
   &_box {
-    margin-top: 5.25rem;
+    margin-top: 6.25rem;
     padding: 0 1.25rem;
     display: flex;
     flex-wrap: wrap;

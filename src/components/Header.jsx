@@ -79,14 +79,14 @@ const Header = () => {
                   <span>Contacts</span>
                 </NavLink>
               </li>
+              <button
+                className="theme_toggle_btn"
+                onClick={() => setDarkMode(!darkMode)}
+                aria-label="Toggle theme"
+              >
+                {darkMode ? "☀️" : "🌙"}
+              </button>
             </ul>
-            <button
-              className="theme_toggle_btn"
-              onClick={() => setDarkMode(!darkMode)}
-              aria-label="Toggle theme"
-            >
-              {darkMode ? "☀️" : "🌙"}
-            </button>
           </div>
         </div>
       </nav>
