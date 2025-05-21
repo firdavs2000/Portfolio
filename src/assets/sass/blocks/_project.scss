@@ -31,12 +31,10 @@
   }
 }
 
-
-
 .project {
   height: 100vh;
   padding: 9.375rem 0 6.25rem;
-  background: linear-gradient(135deg, #0a0a23, #1a0033);
+  background-color: #000;
   position: relative;
   overflow: hidden;
 
@@ -54,9 +52,10 @@
   }
 
   .title {
+    margin-top: 2rem;
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     color: #fff;
     font-family: 'Orbitron', sans-serif; // More cyber than Rubik
     letter-spacing: 0.125rem;
@@ -118,7 +117,7 @@
     font-weight: 500;
     color: #fff;
     font-family: 'Orbitron', sans-serif;
-    text-shadow: 0 0 5px #00ffe1;
+    text-shadow: 0 0 5px #fff;
   }
 }
 

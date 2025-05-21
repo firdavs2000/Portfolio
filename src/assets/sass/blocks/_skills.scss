@@ -3,7 +3,7 @@
   padding: 180px 0;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #0f0f2d, #1a1a40); // default dark
+  background-color: #000;
 
   // Neon grid pattern
   &::before {
@@ -123,7 +123,7 @@
 }
 
 
-@media (max-width: 1040px) {
+@media (max-width: 1140px) {
   .skills {
     height: 100vh;
     padding: 140px 0;
@@ -152,7 +152,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .skills {
     height: 100vh;
     padding: 80px 0;
