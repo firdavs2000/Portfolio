@@ -1,8 +1,7 @@
-import React, { useState, useContext } from 'react';
+import { useState, useContext } from 'react';
 import instagramLogo from '../assets/images/instagram.svg';
 import telegramLogo from '../assets/images/telegram.svg';
 import facebookLogo from '../assets/images/facebook.svg';
-import { CONSTANTS } from "../environments/environment";
 import { DarkModeContext } from '../context/DarkModeContext';
 
 const Contacts = () => {

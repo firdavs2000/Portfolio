@@ -1,4 +1,3 @@
-import React, { useContext } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -8,12 +7,13 @@ import { DarkModeContext } from '../context/DarkModeContext';
 
 import aboutImg from '../assets/images/about.jpg';
 import houseImg from '../assets/images/house.jpg';
-import newsImg from '../assets/images/news.JPG';
+import newsImg from '../assets/images/news.jpg';
 import lazzatImg from '../assets/images/lazzat.jpg';
 import marketImg from '../assets/images/market.jpg';
 import vueImg from '../assets/images/vue.jpg';
 import totemboImg from '../assets/images/totembo.jpg';
 import shopImg from '../assets/images/shop.jpg';
+import { useContext } from 'react';
 
 const projects = [
   { name: '(HTML,CSS)', img: aboutImg },
