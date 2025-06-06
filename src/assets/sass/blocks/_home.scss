@@ -1,0 +1,304 @@
+.light {
+  .home {
+    background-color: #fff;
+    color: #000;
+
+    &_textbox {
+      .home_title {
+        background-image: linear-gradient(to right, #f22a8d, #825bb5);
+      }
+
+      .home_text {
+        color: #0f0f0f;
+      }
+
+      .home_btn {
+        background-color: #f22a8d;
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+
+
+.home {
+  height: 100vh;
+  padding: 12.5rem 0; // 200px
+
+  background-color: #0f0f0f;
+  color: #fff;
+
+  &_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 2.5rem; // 40px
+  }
+
+  &_textbox {
+    flex: 1;
+
+    .home_title {
+      font-size: 3.125rem;
+      font-weight: 500;
+      line-height: 4.875rem;
+      color: transparent;
+      background-image: linear-gradient(to right, #f22a8d, #825bb5) !important;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .home_text {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      margin: 1.875rem 0 3.125rem; // 30px 0 50px
+      max-width: 35.625rem;
+      width: 62.8125rem;
+      text-align: justify;
+      color: #fff;
+    }
+
+    .home_btn {
+      display: inline-block;
+      padding: 20px 24px;
+      font-size: 1.875rem;
+      font-weight: 500;
+      line-height: 0.75rem;
+      background: var(--secondary-color--);
+      border: 2rem  #f22a8d; 
+      border-radius: 2rem; 
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+
+  .home_image {
+    flex: 1;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  .home {
+    padding: 7.5rem 0; // 120px
+
+    .home_content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 2rem; // 32px
+    }
+
+    .home_textbox {
+      .home_title {
+        font-weight: 700;
+        font-size: 2.25rem;
+        line-height: 3.5rem;
+      }
+
+      .home_text {
+        font-size: 1rem;
+        margin: 1.25rem 0 2.5rem; // 20px 0 40px
+        text-align: center;
+      }
+
+      .home_btn {
+        font-size: 1.50rem;
+        padding: 1rem 1.25rem; // 16px 20px
+      }
+    }
+
+    .home_image {
+      img {
+        max-width: 80%;
+        width: 15.625rem; // 250px
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .home {
+    padding: 4.75rem 0; // 80px
+
+    .home_textbox {
+      .home_title {
+        margin-top: 35px;
+        font-size: 1.40rem;
+        line-height: 2.40rem;
+      }
+
+      .home_text {
+        font-size: 1rem;
+      }
+
+      .home_btn {
+        font-size: 0.9rem;
+        padding: 1rem 1rem; // 12px 16px
+      }
+    }
+
+    .home_image {
+      img {
+        max-width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .home {
+    padding: 4.75rem 0; // 80px
+
+    .home_textbox {
+      .home_title {
+        margin-top: 40px;
+        font-size: 1.30rem;
+        line-height: 2.30rem;
+      }
+
+      .home_text {
+        font-size: 0.9rem;
+      }
+
+      .home_btn {
+        font-size: 0.9rem;
+        padding: 0.9rem 1rem; // 12px 16px
+      }
+    }
+
+    .home_image {
+      img {
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .home {
+    padding: 4.50rem 0; // 80px
+
+    .home_textbox {
+      .home_title {
+        margin-top: 35px;
+        font-size: 1.20rem;
+        line-height: 2.20rem;
+      }
+
+      .home_text {
+        font-size: 0.9rem;
+      }
+
+      .home_btn {
+        font-size: 0.9rem;
+        padding: 0.8rem 1rem; // 12px 16px
+      }
+    }
+
+    .home_image {
+      img {
+        max-width: 70%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .home {
+    padding: 4rem 0; // 80px
+
+    .home_textbox {
+      .home_title {
+        margin-top: 40px;
+        font-size: 1rem;
+        line-height: 2rem;
+      }
+
+      .home_text {
+        font-size: 0.8rem;
+      }
+
+      .home_btn {
+        font-size: 0.8rem;
+        padding: 0.8rem 1rem; // 12px 16px
+      }
+    }
+
+    .home_image {
+      img {
+        max-width: 60%;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .home {
+    padding: 3.75rem 0; // 80px
+
+    .home_textbox {
+      .home_title {
+        margin-top: 30px;
+        font-size: 0.875rem;
+        line-height: 1.875em;
+      }
+
+      .home_text {
+        font-size: 0.7rem;
+        text-overflow: ellipsis; // Tugashini "..." bilan ko‘rsatad
+      }
+
+      .home_btn {
+        font-size: 0.7rem;
+        padding: 0.7rem 1rem; // 12px 16px
+      }
+    }
+
+    .home_image {
+      img {
+        max-width: 60%;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .home {
+    padding: 3rem 0; // 80px
+
+    .home_textbox {
+      .home_title {
+        margin-top: 20px;
+        font-size: 0.700rem;
+        line-height: 1.700rem;
+      }
+
+      .home_text {
+        font-size: 0.7rem;
+      }
+
+      .home_btn {
+        font-size: 0.7rem;
+        padding: 0.7rem 1rem; // 12px 16px
+      }
+    }
+
+    .home_image {
+      img {
+        max-width: 60%;
+      }
+    }
+  }
+}
