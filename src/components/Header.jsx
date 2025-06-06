@@ -8,7 +8,6 @@ const Header = () => {
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
-  // Optional: set body class globally
   useEffect(() => {
     document.body.className = darkMode ? "dark" : "light";
   }, [darkMode]);
@@ -66,7 +65,7 @@ const Header = () => {
                     isActive ? "nav_link active" : "nav_link"
                   }
                 >
-                  <span>Project</span>
+                  <span>Projects</span>
                 </NavLink>
               </li>
               <li>
